@@ -10,9 +10,9 @@ class Brick(GameObject):
         self.height = 20
         self.hits = hits
         color = Brick.COLORS[hits]
-        item = canvas.create_rectangle(x - self.width / 2,
+        item = canvas.create_rectangle(x - self.width / 2, 
                                        y - self.height / 2,
-                                       x + self.width / 2,
+                                       x + self.width / 2, 
                                        y + self.height / 2,
                                        fill=color, tags='brick')
         super(Brick, self).__init__(canvas, item)
